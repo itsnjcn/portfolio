@@ -1,16 +1,202 @@
+// Brand Logo
+$brand-logo: #010046;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background:url("assets\media\pexels-tranmautritam-326503.jpg") no-repeat;
+    background-size: cover;
+}
+
+// Header & Nav Bar
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $brand-logo;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header {
+
+    .logo {
+        font-weight: bolder;
+        font-size: 25px;
+        color:#fff;
+    }
+
+    .navbar ul {
+        list-style: none;
+
+        li {
+            position: relative;
+            float: left;
+
+            a {
+                font-size: 20px;
+                padding: 20px;
+                color: #fff;
+                display: block;
+            }
+
+            a:hover {
+                background-color: #fff;
+                color: $brand-logo;
+                transition: .5s ease-in-out;
+            }
+
+            ul {
+                position: absolute;
+                left: 0;
+                width: 200px;
+                background: #fff;
+                display: none;
+
+                a {
+                    color: $brand-logo;
+                }
+                
+                a:hover {
+                    background-color: $brand-logo;
+                    color: white;
+                    transition: .5s ease-in-out;
+                }
+
+                li {
+                    width: 100%;
+                    border-top: 1px solid #333;
+                }
+            }
+        }
+
+        li:hover > ul {
+            display: initial;
+        }
+    }
+
+    label {
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+#menu-bar {
+    display: none;
+}
 
 
 // Breakpoint for Phones
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    // Header
+    header {
+        padding: 20px;
+        text-align: center;
+
+        label {
+            display: initial;
+            color: $brand-logo;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #fff;
+            display: none;
+
+            ul li {
+                width: 100%;
+
+                ul {
+                    position: relative;
+                    color:$brand-logo;
+                    width: 100%;
+                }
+
+                a {
+                    color: $brand-logo;
+                    border-bottom: 2px solid $brand-logo;
+                }
+            }
+        }
+    }
+
+    img {
+        max-width: 30px;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
 
 }
 
 // Breakpoint for Tablets
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
+    // Header
+    header {
+        padding: 20px;
+        text-align: center;
+
+        label {
+            display: initial;
+            color: $brand-logo;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #fff;
+            display: none;
+
+            ul li {
+                width: 100%;
+
+                ul {
+                    position: relative;
+                    color:$brand-logo;
+                    width: 100%;
+                }
+
+                a {
+                    color: $brand-logo;
+                    border-bottom: 2px solid $brand-logo;
+                }
+            }
+        }
+    }
+
+    img {
+        max-width: 30px;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
 }
 
 // Breakpoint for Desktop
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-
+@media only screen and (min-width: 769px) {
+    
 }

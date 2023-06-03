@@ -1,1 +1,157 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url("assetsmediapexels-tranmautritam-326503.jpg") no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #010046;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: bolder;
+  font-size: 25px;
+  color: #fff;
+}
+header .navbar ul {
+  list-style: none;
+}
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+  display: block;
+}
+header .navbar ul li a:hover {
+  background-color: #fff;
+  color: #010046;
+  transition: 0.5s ease-in-out;
+}
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+}
+header .navbar ul li ul a {
+  color: #010046;
+}
+header .navbar ul li ul a:hover {
+  background-color: #010046;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid #333;
+}
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+header label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+#menu-bar {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+  header label {
+    display: initial;
+    color: #010046;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: none;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    color: #010046;
+    width: 100%;
+  }
+  header .navbar ul li a {
+    color: #010046;
+    border-bottom: 2px solid #010046;
+  }
+  img {
+    max-width: 30px;
+  }
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+  header label {
+    display: initial;
+    color: #010046;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: none;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    color: #010046;
+    width: 100%;
+  }
+  header .navbar ul li a {
+    color: #010046;
+    border-bottom: 2px solid #010046;
+  }
+  img {
+    max-width: 30px;
+  }
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+}/*# sourceMappingURL=styles.css.map */
