@@ -197,8 +197,8 @@ main {
     }
 
     .index-text {
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
         padding-top: 10px;
         text-align: center;
     }
@@ -208,6 +208,82 @@ main {
         margin: 20px;
         border-radius: 15px;
     }
+
+    .index-flex {
+        .index-box {
+            width: 30%;
+            padding-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+
+            .index-image {
+                width: 70vw;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    display: block;
+                    margin: auto;
+                    border: 1px solid;
+                    border-radius: 30px;
+                }
+
+                .box-text {
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border: 1px solid;
+                    border-radius: 30px;
+
+                    h1 {
+                        font-size: 55px;
+                        color: #fff;
+                        margin-bottom: 15px;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        color: #fff;
+                        padding-bottom: 30px;
+                        text-align: center;
+                    }
+
+                    a {
+                        text-align: left;
+                        border-radius: 30px;
+                        border: 1px solid #fff;
+                        background-color: $brand-logo;
+                        color: $brand-logo;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        font-size: 1.7em;
+                        font-weight: bold;
+                        color: #fff;
+                    }
+
+                    a:hover {
+                        background-color: #717179;
+                        color: #fff;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 // Breakpoint for Phones
@@ -296,7 +372,30 @@ main {
         .index-text {
             font-size: 1.2em;
         }
+
+        .index-flex {
+            .index-box {
+                .index-image {
+                    width: 90vw;
+
+                    .box-text {
+                        h1 {
+                            font-size: 2em;
+                        }
+
+                        p {
+                            font-size: 1em;
+                        }
+
+                        a {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
     }
+
 }
 
 // Breakpoint for Tablets
@@ -310,7 +409,6 @@ main {
 
         .main-footer {
             flex-direction: column;
-            ;
 
             .footer-flex {
                 margin-bottom: -30px;
@@ -341,6 +439,28 @@ main {
 
         .index-text {
             font-size: 1.2em;
+        }
+
+        .index-flex {
+            .index-box {
+                .index-image {
+                    width: 70vw;
+
+                    .box-text {
+                        h1 {
+                            font-size: 3em;
+                        }
+
+                        p {
+                            font-size: 1em;
+                        }
+
+                        a {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
         }
     }
 }
