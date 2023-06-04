@@ -12,7 +12,7 @@ $brand-logo: #010046;
 
 body {
     min-height: 100vh;
-    background:url("assets\media\pexels-tranmautritam-326503.jpg") no-repeat;
+    background: url("assets\media\pexels-tranmautritam-326503.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -36,7 +36,7 @@ header {
     .logo {
         font-weight: bolder;
         font-size: 25px;
-        color:#fff;
+        color: #fff;
     }
 
     .navbar ul {
@@ -69,7 +69,7 @@ header {
                 a {
                     color: $brand-logo;
                 }
-                
+
                 a:hover {
                     background-color: $brand-logo;
                     color: white;
@@ -83,7 +83,7 @@ header {
             }
         }
 
-        li:hover > ul {
+        li:hover>ul {
             display: initial;
         }
     }
@@ -98,6 +98,76 @@ header {
 
 #menu-bar {
     display: none;
+}
+
+// Footer
+footer {
+    background-color: $brand-logo;
+    color: #fff;
+    text-align: center;
+
+    .main-footer {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+
+        .footer-flex {
+            padding: 50px;
+
+            ul {
+                list-style-type: none;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    list-style: none;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        margin: 10px;
+                    }
+
+                }
+
+                a:hover {
+                    color: #717179
+                }
+
+                #contact-footer {
+                    text-align: left;
+                    border-radius: 30px;
+                    border: 1px solid #fff;
+                    background-color: #fff;
+                    color: $brand-logo;
+                    width: 50px;
+                    height: 50px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    font-size: 1.7em;
+                    font-weight: bold;
+                }
+
+                #contact-footer:hover {
+                    background-color: #717179;
+                    color: #fff;
+                    transition: .5s;
+                }
+
+                .pages-footer {
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+
+    #copy {
+        padding-bottom: 20px;
+    }
 }
 
 
@@ -127,7 +197,7 @@ header {
 
                 ul {
                     position: relative;
-                    color:$brand-logo;
+                    color: $brand-logo;
                     width: 100%;
                 }
 
@@ -143,10 +213,37 @@ header {
         max-width: 30px;
     }
 
-    #menu-bar:checked ~ .navbar {
+    #menu-bar:checked~.navbar {
         display: initial;
     }
 
+    // Footer
+    footer {
+        background-color: $brand-logo;
+        color: #fff;
+        text-align: center;
+
+        .main-footer {
+            flex-direction: column;
+            ;
+
+            .footer-flex {
+                margin-bottom: -30px;
+
+                ul {
+                    a {
+                        img {
+                            width: 80px;
+                            height: 50px;
+                            margin: 10px;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 // Breakpoint for Tablets
@@ -175,7 +272,7 @@ header {
 
                 ul {
                     position: relative;
-                    color:$brand-logo;
+                    color: $brand-logo;
                     width: 100%;
                 }
 
@@ -191,12 +288,38 @@ header {
         max-width: 30px;
     }
 
-    #menu-bar:checked ~ .navbar {
+    #menu-bar:checked~.navbar {
         display: initial;
+    }
+
+    // Footer
+    footer {
+        background-color: $brand-logo;
+        color: #fff;
+        text-align: center;
+
+        .main-footer {
+            flex-direction: column;
+            ;
+
+            .footer-flex {
+                margin-bottom: -30px;
+
+                ul {
+                    a {
+                        img {
+                            width: 80px;
+                            height: 50px;
+                            margin: 10px;
+                        }
+
+                    }
+
+                }
+            }
+        }
     }
 }
 
 // Breakpoint for Desktop
-@media only screen and (min-width: 769px) {
-    
-}
+@media only screen and (min-width: 769px) {}

@@ -83,6 +83,64 @@ header label {
   display: none;
 }
 
+footer {
+  background-color: #010046;
+  color: #fff;
+  text-align: center;
+}
+footer .main-footer {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+footer .main-footer .footer-flex {
+  padding: 50px;
+}
+footer .main-footer .footer-flex ul {
+  list-style-type: none;
+}
+footer .main-footer .footer-flex ul a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer .main-footer .footer-flex ul a img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+footer .main-footer .footer-flex ul a:hover {
+  color: #717179;
+}
+footer .main-footer .footer-flex ul #contact-footer {
+  text-align: left;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #010046;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+footer .main-footer .footer-flex ul #contact-footer:hover {
+  background-color: #717179;
+  color: #fff;
+  transition: 0.5s;
+}
+footer .main-footer .footer-flex ul .pages-footer {
+  font-size: 1.1em;
+}
+footer #copy {
+  padding-bottom: 20px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   header {
     padding: 20px;
@@ -117,6 +175,22 @@ header label {
   }
   #menu-bar:checked ~ .navbar {
     display: initial;
+  }
+  footer {
+    background-color: #010046;
+    color: #fff;
+    text-align: center;
+  }
+  footer .main-footer {
+    flex-direction: column;
+  }
+  footer .main-footer .footer-flex {
+    margin-bottom: -30px;
+  }
+  footer .main-footer .footer-flex ul a img {
+    width: 80px;
+    height: 50px;
+    margin: 10px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -153,5 +227,21 @@ header label {
   }
   #menu-bar:checked ~ .navbar {
     display: initial;
+  }
+  footer {
+    background-color: #010046;
+    color: #fff;
+    text-align: center;
+  }
+  footer .main-footer {
+    flex-direction: column;
+  }
+  footer .main-footer .footer-flex {
+    margin-bottom: -30px;
+  }
+  footer .main-footer .footer-flex ul a img {
+    width: 80px;
+    height: 50px;
+    margin: 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
