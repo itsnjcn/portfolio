@@ -209,14 +209,16 @@ main .index-flex .index-box .index-image .box-text {
 main .index-flex .index-box .index-image .box-text h1 {
   font-size: 55px;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: center;
 }
 main .index-flex .index-box .index-image .box-text p {
   font-size: 20px;
   color: #fff;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 main .index-flex .index-box .index-image .box-text a {
   text-align: left;
@@ -309,21 +311,39 @@ main .index-flex .index-box .index-image .box-text a:hover {
   }
 }
 @media only screen and (min-width: 651px) and (max-width: 809px) {
-  footer {
-    background-color: #010046;
-    color: #fff;
+  header {
+    padding: 20px;
     text-align: center;
   }
-  footer .main-footer {
-    flex-direction: column;
+  header label {
+    display: initial;
+    color: #010046;
   }
-  footer .main-footer .footer-flex {
-    margin-bottom: -30px;
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: none;
   }
-  footer .main-footer .footer-flex ul a img {
-    width: 80px;
-    height: 50px;
-    margin: 10px;
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    color: #010046;
+    width: 100%;
+  }
+  header .navbar ul li a {
+    color: #010046;
+    border-bottom: 2px solid #010046;
+  }
+  header img {
+    max-width: 30px;
+  }
+  #menu-bar:checked ~ .navbar {
+    display: initial;
   }
   main .hero .hero-text {
     font-size: 1.5em;
@@ -335,21 +355,49 @@ main .index-flex .index-box .index-image .box-text a:hover {
     width: 70vw;
   }
   main .index-flex .index-box .index-image .box-text h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
   main .index-flex .index-box .index-image .box-text p {
-    font-size: 1em;
+    font-size: 2em;
   }
   main .index-flex .index-box .index-image .box-text a {
-    font-size: 1.2em;
+    font-size: 2em;
   }
 }
-@media only screen and (min-width: 810px) {
+@media only screen and (min-width: 1024px) {
   main .hero .hero-text {
     font-size: 2em;
   }
   main .index-text {
     font-size: 1.6em;
     margin-left: 20px;
+  }
+  main .index-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 10px;
+  }
+  main .index-flex .index-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+  }
+  main .index-flex .index-box .index-image {
+    width: 30vw;
+  }
+  main .index-flex .index-box .index-image .box-text h1 {
+    font-size: 3em;
+  }
+  main .index-flex .index-box .index-image .box-text p {
+    font-size: 1.2em;
+  }
+  main .index-flex .index-box .index-image .box-text a {
+    font-size: 1.5em;
   }
 }/*# sourceMappingURL=styles.css.map */
