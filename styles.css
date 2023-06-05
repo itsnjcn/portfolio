@@ -239,12 +239,21 @@ main .index-flex .index-box .index-image .box-text a:hover {
   transition: 0.5s;
 }
 
-main .about-header {
+main .page-header {
   text-align: center;
   margin-top: 120px;
   font-size: 2em;
   padding-bottom: 20px;
 }
+main .page-details {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+main .page-details h2 {
+  padding: 20px;
+  text-align: center;
+}
+
 main .about-information {
   flex-wrap: wrap;
   justify-content: left;
@@ -261,10 +270,6 @@ main .about-information .info-container h3 {
   font-size: 1em;
   padding-bottom: 10px;
 }
-main .about-details {
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
 main .about-skills {
   display: flex;
   flex-wrap: wrap;
@@ -278,7 +283,33 @@ main .about-skills .skills-container a {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 650px) {
+main .gallery {
+  margin: 10px 50px;
+  text-align: center;
+}
+main .gallery img {
+  width: 230px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+main .gallery img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+main .insta-info {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+main .insta-info img {
+  padding-top: 10px;
+  width: 5%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   header {
     padding: 20px;
     text-align: center;
@@ -347,11 +378,21 @@ main .about-skills .skills-container a {
   main .index-flex .index-box .index-image .box-text a {
     font-size: 1.2em;
   }
-  main .about-header {
+  main .page-header {
     text-align: center;
     margin-top: 100px;
     font-size: 1.3em;
     padding-bottom: 20px;
+  }
+  main .page-details {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  main .page-details h2 {
+    font-size: 1.6em;
+  }
+  main .page-details p {
+    font-size: 1.2em;
   }
   main .about-information {
     flex-wrap: wrap;
@@ -369,10 +410,6 @@ main .about-skills .skills-container a {
     font-size: 1em;
     padding-bottom: 10px;
   }
-  main .about-details {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
   main .about-skills {
     display: flex;
     flex-wrap: wrap;
@@ -385,8 +422,11 @@ main .about-skills .skills-container a {
     font-size: 1.2em;
     font-weight: bold;
   }
+  main .insta-info a img {
+    width: 20%;
+  }
 }
-@media only screen and (min-width: 651px) and (max-width: 809px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   header {
     padding: 20px;
     text-align: center;
@@ -439,8 +479,28 @@ main .about-skills .skills-container a {
   main .index-flex .index-box .index-image .box-text a {
     font-size: 2em;
   }
+  main .page-header {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+  }
+  main .page-details {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  main .page-details p {
+    font-size: 1.1em;
+  }
+  main .about-information .info-container #profile-size {
+    width: 30%;
+    border-radius: 30px;
+  }
+  main .insta-info a img {
+    width: 9%;
+  }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 769px) {
   main .hero .hero-text {
     font-size: 2em;
   }
@@ -476,6 +536,20 @@ main .about-skills .skills-container a {
   main .index-flex .index-box .index-image .box-text a {
     font-size: 1.5em;
   }
+  main .page-header {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 2em;
+    padding-bottom: 20px;
+  }
+  main .page-details {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1.5em;
+  }
+  main .page-details p {
+    font-size: 1em;
+  }
   main .about-information {
     display: flex;
     flex-wrap: wrap;
@@ -501,10 +575,6 @@ main .about-skills .skills-container a {
     position: inherit;
     top: 3rem;
   }
-  main .about-details {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
   main .about-skills {
     display: flex;
     flex-wrap: wrap;
@@ -516,5 +586,8 @@ main .about-skills .skills-container a {
   main .about-skills .skills-container a {
     font-size: 1.2em;
     font-weight: bold;
+  }
+  main .insta-info a img {
+    width: 9%;
   }
 }/*# sourceMappingURL=styles.css.map */

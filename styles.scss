@@ -285,15 +285,28 @@ main {
     }
 }
 
-// About
+// Commonalities [Applicable on all pages except index]
 main {
-    .about-header {
+    .page-header {
         text-align: center;
         margin-top: 120px;
         font-size: 2em;
         padding-bottom: 20px;
-
     }
+
+    .page-details {
+        margin-left: 5vw;
+        margin-right: 5vw;
+
+        h2 {
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}
+
+// About
+main {
 
     .about-information {
         flex-wrap: wrap;
@@ -318,11 +331,6 @@ main {
         }
     }
 
-    .about-details {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-
     .about-skills {
         display: flex;
         flex-wrap: wrap;
@@ -339,8 +347,41 @@ main {
     }
 }
 
+// Photo Gallery
+main {
+    .gallery {
+        margin: 10px 50px;
+        text-align: center;
+
+        img {
+            width: 230px;
+            padding: 5px;
+            filter: grayscale(100%);
+            transition: 1s;
+        }
+
+        img:hover {
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+    }
+
+    .insta-info {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 1.5em;
+        margin-left: 5vw;
+        margin-right: 5vw;
+
+        img {
+            padding-top: 10px;
+            width: 5%
+        }
+    }
+}
+
 // Breakpoint for Phones
-@media only screen and (min-width: 320px) and (max-width: 650px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 
     // Header
     header {
@@ -448,14 +489,32 @@ main {
         }
     }
 
-    // About
+    // Commonalities [Applicable on all pages except index]
     main {
-        .about-header {
+        .page-header {
             text-align: center;
             margin-top: 100px;
             font-size: 1.3em;
             padding-bottom: 20px;
         }
+
+        .page-details {
+            margin-left: 5vw;
+            margin-right: 5vw;
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+        }
+    }
+
+    // About
+    main {
 
         .about-information {
             flex-wrap: wrap;
@@ -480,11 +539,6 @@ main {
             }
         }
 
-        .about-details {
-            margin-left: 5vw;
-            margin-right: 5vw;
-        }
-
         .about-skills {
             display: flex;
             flex-wrap: wrap;
@@ -501,10 +555,22 @@ main {
         }
     }
 
+    // Photo Gallery
+
+    main {
+        .insta-info {
+            a {
+                img {
+                    width: 20%;
+                }
+            }
+        }
+    }
+
 }
 
 // Breakpoint for Tablets
-@media only screen and (min-width: 651px) and (max-width: 809px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 
     // Header
     header {
@@ -584,10 +650,52 @@ main {
             }
         }
     }
+
+    // Commonalities [Applicable on all pages except index]
+    main {
+        .page-header {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 1.5em;
+            padding-bottom: 20px;
+        }
+
+        .page-details {
+            margin-left: 5vw;
+            margin-right: 5vw;
+
+            p {
+                font-size: 1.1em;
+            }
+        }
+    }
+
+    // About
+    main {
+        .about-information {
+            .info-container {
+                #profile-size {
+                    width: 30%;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+    // Photo Gallery
+    main {
+        .insta-info {
+            a {
+                img {
+                    width: 9%;
+                }
+            }
+        }
+    }
 }
 
 // Breakpoint for Desktop
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 769px) {
 
     //index
 
@@ -640,6 +748,26 @@ main {
         }
     }
 
+    // Commonalities [Applicable on all pages except index]
+    main {
+        .page-header {
+            text-align: center;
+            margin-top: 120px;
+            font-size: 2em;
+            padding-bottom: 20px;
+        }
+
+        .page-details {
+            margin-left: 5vw;
+            margin-right: 5vw;
+            font-size: 1.5em;
+
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
     // About
     main {
 
@@ -673,11 +801,6 @@ main {
             }
         }
 
-        .about-details {
-            margin-left: 5vw;
-            margin-right: 5vw;
-        }
-
         .about-skills {
             display: flex;
             flex-wrap: wrap;
@@ -694,4 +817,14 @@ main {
         }
     }
 
+    // Photo Gallery
+    main {
+        .insta-info {
+            a {
+                img {
+                    width: 9%;
+                }
+            }
+        }
+    }
 }
