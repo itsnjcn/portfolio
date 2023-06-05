@@ -286,7 +286,59 @@ main {
             }
         }
     }
+}
 
+// About
+main {
+    .about-header {
+        text-align: center;
+        margin-top: 100px;
+        font-size: larger;
+        padding-bottom: 20px;
+    }
+
+    .about-information {
+        flex-wrap: wrap;
+        justify-content: left;
+        text-align: center;
+
+        .info-container {
+
+            #profile-size {
+                width: 20%;
+                border-radius: 30px;
+            }
+
+            h2 {
+                font-size: 2.3em;
+            }
+
+            h3 {
+                font-size: 1em;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .about-details {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .about-skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .skills-container {
+            margin: 10px;
+
+            a {
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 // Breakpoint for Phones
@@ -364,7 +416,6 @@ main {
     }
 
     //index
-
     main {
         .hero {
             .hero-text {
@@ -394,6 +445,59 @@ main {
                             font-size: 1.2em;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    // About
+    main {
+        .about-header {
+            text-align: center;
+            margin-top: 100px;
+            font-size: larger;
+            padding-bottom: 20px;
+        }
+
+        .about-information {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+
+            .info-container {
+
+                #profile-size {
+                    width: 50%;
+                    border-radius: 30px;
+                }
+
+                h2 {
+                    font-size: 2.3em;
+                }
+
+                h3 {
+                    font-size: 1em;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        .about-details {
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+
+        .about-skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .skills-container {
+                margin: 10px;
+
+                a {
+                    font-size: 1.2em;
+                    font-weight: bold;
                 }
             }
         }
@@ -501,7 +605,7 @@ main {
             margin-left: 20px;
         }
 
-        .index-flex{
+        .index-flex {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -534,39 +638,62 @@ main {
                         }
                     }
                 }
-              }
+            }
+        }
+    }
+
+    // About
+    main {
+        .about-header {
+            text-align: center;
+            margin-top: 100px;
+            font-size: larger;
+            padding-bottom: 20px;
         }
 
-        // .index-flex {
-        //     display: flex;
-        //     justify-content: center;
-        //     flex-direction: row;
-        //     flex-basis: 20%;
-        //     flex-wrap: wrap;
-            
-        //     .index-box {
-        //         width: 100%;
-        //         padding: 10px;
+        .about-information {
+            flex-wrap: wrap;
+            justify-content: left;
+            text-align: center;
 
-        //         .index-image {
-        //             width: 30vw;
+            .info-container {
+                flex-direction: column;
 
-        //             .box-text {
-        //                 h1 {
-        //                     font-size: 4em;
-        //                 }
+                #profile-size {
+                    width: 15%;
+                    border-radius: 30px;
+                }
 
-        //                 p {
-        //                     font-size: 1.2em;
-        //                 }
+                h2 {
+                    font-size: 2.3em;
+                }
 
-        //                 a {
-        //                     font-size: 1.5em;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
+                h3 {
+                    font-size: 1em;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        .about-details {
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+
+        .about-skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .skills-container {
+                margin: 10px;
+
+                a {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+            }
+        }
     }
 
 }
