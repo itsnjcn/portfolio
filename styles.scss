@@ -652,25 +652,31 @@ main {
         }
 
         .about-information {
+            display: flex;
             flex-wrap: wrap;
-            justify-content: left;
-            text-align: center;
+            justify-content: center;
+            text-align: left;
+            position: relative;
 
             .info-container {
                 flex-direction: column;
 
                 #profile-size {
-                    width: 15%;
+                    width: 100%;
                     border-radius: 30px;
                 }
 
                 h2 {
                     font-size: 2.3em;
+                    position: inherit;
+                    top: 3rem;
                 }
 
                 h3 {
                     font-size: 1em;
                     padding-bottom: 10px;
+                    position: inherit;
+                    top: 3rem;
                 }
             }
         }
