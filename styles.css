@@ -234,8 +234,8 @@ main .index-flex .index-box .index-image .box-text a {
   color: #fff;
 }
 main .index-flex .index-box .index-image .box-text a:hover {
-  background-color: #717179;
-  color: #fff;
+  background-color: #fff;
+  color: #010046;
   transition: 0.5s;
 }
 
@@ -582,6 +582,7 @@ main .insta-info img {
   }
   main .about-skills .skills-container {
     margin: 10px;
+    font-size: 1.4em;
   }
   main .about-skills .skills-container a {
     font-size: 1.2em;

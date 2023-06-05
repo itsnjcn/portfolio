@@ -275,8 +275,8 @@ main {
                     }
 
                     a:hover {
-                        background-color: #717179;
-                        color: #fff;
+                        background-color: #fff;
+                        color: $brand-logo;
                         transition: .5s;
                     }
                 }
@@ -808,6 +808,7 @@ main {
 
             .skills-container {
                 margin: 10px;
+                font-size: 1.4em;
 
                 a {
                     font-size: 1.2em;
