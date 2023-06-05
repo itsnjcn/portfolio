@@ -28,9 +28,6 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-}
-
-header {
 
     .logo {
         font-weight: bolder;
@@ -47,7 +44,7 @@ header {
 
             a {
                 font-size: 20px;
-                padding: 20px;
+                padding: 10px;
                 color: #fff;
                 display: block;
             }
@@ -292,9 +289,10 @@ main {
 main {
     .about-header {
         text-align: center;
-        margin-top: 100px;
-        font-size: larger;
+        margin-top: 120px;
+        font-size: 2em;
         padding-bottom: 20px;
+
     }
 
     .about-information {
@@ -455,7 +453,7 @@ main {
         .about-header {
             text-align: center;
             margin-top: 100px;
-            font-size: larger;
+            font-size: 1.3em;
             padding-bottom: 20px;
         }
 
@@ -644,12 +642,6 @@ main {
 
     // About
     main {
-        .about-header {
-            text-align: center;
-            margin-top: 100px;
-            font-size: larger;
-            padding-bottom: 20px;
-        }
 
         .about-information {
             display: flex;

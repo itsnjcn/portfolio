@@ -25,7 +25,6 @@ header {
   justify-content: space-between;
   z-index: 1000;
 }
-
 header .logo {
   font-weight: bolder;
   font-size: 25px;
@@ -40,7 +39,7 @@ header .navbar ul li {
 }
 header .navbar ul li a {
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   color: #fff;
   display: block;
 }
@@ -242,8 +241,8 @@ main .index-flex .index-box .index-image .box-text a:hover {
 
 main .about-header {
   text-align: center;
-  margin-top: 100px;
-  font-size: larger;
+  margin-top: 120px;
+  font-size: 2em;
   padding-bottom: 20px;
 }
 main .about-information {
@@ -351,7 +350,7 @@ main .about-skills .skills-container a {
   main .about-header {
     text-align: center;
     margin-top: 100px;
-    font-size: larger;
+    font-size: 1.3em;
     padding-bottom: 20px;
   }
   main .about-information {
@@ -476,12 +475,6 @@ main .about-skills .skills-container a {
   }
   main .index-flex .index-box .index-image .box-text a {
     font-size: 1.5em;
-  }
-  main .about-header {
-    text-align: center;
-    margin-top: 100px;
-    font-size: larger;
-    padding-bottom: 20px;
   }
   main .about-information {
     display: flex;
