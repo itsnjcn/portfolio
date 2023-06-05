@@ -309,6 +309,59 @@ main .insta-info img {
   width: 5%;
 }
 
+main .mockup-flex .mockup-box {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px;
+}
+main .mockup-flex .mockup-box .mockup-image {
+  position: relative;
+}
+main .mockup-flex .mockup-box .mockup-image img {
+  width: 100%;
+  margin: auto;
+  border: 1px solid;
+  border-radius: 30px;
+}
+main .mockup-flex .mockup-box .mockup-image .mockup-text {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 30px;
+  text-align: center;
+}
+main .mockup-flex .mockup-box .mockup-image a {
+  text-align: left;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background-color: #010046;
+  color: #010046;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+}
+main .mockup-flex .mockup-box .mockup-image a:hover {
+  background-color: #fff;
+  color: #010046;
+  transition: 0.5s;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   header {
     padding: 20px;
@@ -499,6 +552,16 @@ main .insta-info img {
   main .insta-info a img {
     width: 9%;
   }
+  main .mockup-flex .mockup-box .mockup-image {
+    width: 50vw;
+  }
+  main .mockup-flex .mockup-box .mockup-image .mockup-text h2 {
+    font-size: 2em;
+  }
+  main .mockup-flex .mockup-box .mockup-image .mockup-text p {
+    padding-top: 10px;
+    font-size: 1em;
+  }
 }
 @media only screen and (min-width: 769px) {
   main .hero .hero-text {
@@ -590,5 +653,29 @@ main .insta-info img {
   }
   main .insta-info a img {
     width: 9%;
+  }
+  main .mockup-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  main .mockup-flex .mockup-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+  }
+  main .mockup-flex .mockup-box .mockup-image {
+    width: 30vw;
+  }
+  main .mockup-flex .mockup-box .mockup-image .mockup-text h2 {
+    font-size: 2.3em;
+  }
+  main .mockup-flex .mockup-box .mockup-image .mockup-text p {
+    padding-top: 10px;
+    font-size: 1.2em;
   }
 }/*# sourceMappingURL=styles.css.map */

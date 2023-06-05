@@ -378,6 +378,72 @@ main {
             width: 5%
         }
     }
+
+
+}
+
+// Mockups
+main {
+    .mockup-flex {
+        .mockup-box {
+            padding-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin: 10px;
+
+            .mockup-image {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    margin: auto;
+                    border: 1px solid;
+                    border-radius: 30px;
+                }
+
+                .mockup-text {
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border: 1px solid;
+                    border-radius: 30px;
+                    text-align: center;
+                }
+
+                a {
+                    text-align: left;
+                    border-radius: 30px;
+                    border: 1px solid #fff;
+                    background-color: $brand-logo;
+                    color: $brand-logo;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    font-size: 1em;
+                    font-weight: bold;
+                    color: #fff;
+                }
+
+                a:hover {
+                    background-color: #fff;
+                    color: $brand-logo;
+                    transition: .5s;
+                }
+
+            }
+        }
+    }
 }
 
 // Breakpoint for Phones
@@ -556,7 +622,6 @@ main {
     }
 
     // Photo Gallery
-
     main {
         .insta-info {
             a {
@@ -566,7 +631,6 @@ main {
             }
         }
     }
-
 }
 
 // Breakpoint for Tablets
@@ -616,7 +680,6 @@ main {
     }
 
     //index
-
     main {
         .hero {
             .hero-text {
@@ -692,13 +755,36 @@ main {
             }
         }
     }
+
+    // Mockups 
+    main {
+        .mockup-flex {
+
+            .mockup-box {
+
+                .mockup-image {
+                    width: 50vw;
+
+                    .mockup-text {
+                        h2 {
+                            font-size: 2em;
+                        }
+
+                        p {
+                            padding-top: 10px;
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Breakpoint for Desktop
 @media only screen and (min-width: 769px) {
 
     //index
-
     main {
         .hero {
             .hero-text {
@@ -824,6 +910,40 @@ main {
             a {
                 img {
                     width: 9%;
+                }
+            }
+        }
+    }
+
+    // Mockups 
+    main {
+        .mockup-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+            .mockup-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 30vw;
+
+                .mockup-image {
+                    width: 30vw;
+
+                    .mockup-text {
+                        h2 {
+                            font-size: 2.3em;
+                        }
+
+                        p {
+                            padding-top: 10px;
+                            font-size: 1.2em;
+                        }
+                    }
                 }
             }
         }
