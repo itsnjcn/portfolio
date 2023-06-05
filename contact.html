@@ -1,0 +1,134 @@
+<html>
+
+<head>
+  <title>Welcome to my Portfolio!</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">NJCN</a>
+
+    <input type="checkbox" id="menu-bar" />
+    <label for="menu-bar">
+      <img src="assets\media\navbar-logo.svg" />
+    </label>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li>
+          <a href="#">Works +</a>
+          <ul>
+            <li><a href="photographs.html">Photograph Gallery</a></li>
+            <li><a href="mockups.html">Website Mockups</a></li>
+            <li><a href="prototypes.html">Design Prototypes</a></li>
+            <li><a href="others.html">Other Works</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Me!</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--Main Content Starts Here-->
+    <div class="page-header">
+      <h1>Contact Me!</h1>
+    </div>
+
+    <div class="page-details">
+      <p>
+        If you have any questions or concerns you want to point out, feel free
+        to send me your message using this form!
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="container">
+      <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+          <h2>Contact Form</h2>
+          <form action="https://formsubmit.co/a10f1b46d6866628192a1c0fd4dafac4" method="POST" enctype="multipart/form-data">
+            <input name="Name" type="text" class="field" placeholder="Your Name" required />
+            <input name="email" type="email" class="field" placeholder="Your Email" required />
+            <input type="text" name="Phone" class="field" placeholder="Phone (Optional)" />
+            <input name="file" type="file" class="field" name="attachment" accept="image/png, image/jpeg">
+            <textarea name="Message" placeholder="Message" class="field" required></textarea>
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse"
+              value="Thank you for reaching out to me through this Form! Please wait for an actual response from me since this is an Auto-Generated response. ~ NJCN">
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="main-footer">
+      <div class="footer-flex">
+        <h1>Visit My Socials</h1>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/nj.neri/" target="”_blank”">
+              <img src="assets\media\instagram.svg" />
+            </a>
+            <a href="https://www.linkedin.com/in/njcn/" target="”_blank”">
+              <img src="assets\media\linkedin.svg" />
+            </a>
+
+            <a href="https://youtube.com/@njcn" target="”_blank”">
+              <img src="assets\media\youtube.svg" />
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="contact.html" id="contact-footer"> Contact Me </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-flex">
+        <ul>
+          <li>
+            <h1>Other Pages</h1>
+          </li>
+          <li>
+            <a href="index.html" class="pages-footer"> About Me </a>
+          </li>
+          <li>
+            <a href="about.html" class="pages-footer"> Photograph Gallery </a>
+          </li>
+          <li>
+            <a href="photographs.html" class="pages-footer">
+              Website Mockups
+            </a>
+          </li>
+          <li>
+            <a href="mockups.html" class="pages-footer">
+              Design Prototypes
+            </a>
+          </li>
+          <li>
+            <a href="others.html" class="pages-footer"> Other Works </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Copyright-->
+
+    <div class="footer-flex" id="copy">
+      <p>&copy 2023 NJCN. All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>
