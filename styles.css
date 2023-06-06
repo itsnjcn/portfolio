@@ -316,6 +316,7 @@ main .mockup-flex .mockup-box {
   justify-content: center;
   flex-direction: row;
   margin: 10px;
+  transition: 0.5s;
 }
 main .mockup-flex .mockup-box .mockup-image {
   position: relative;
@@ -360,6 +361,9 @@ main .mockup-flex .mockup-box .mockup-image a:hover {
   background-color: #fff;
   color: #010046;
   transition: 0.5s;
+}
+main .mockup-flex .mockup-box:hover {
+  scale: 1.05;
 }
 
 main .container {

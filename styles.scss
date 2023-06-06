@@ -386,6 +386,7 @@ main {
       justify-content: center;
       flex-direction: row;
       margin: 10px;
+      transition: .5s;
 
       .mockup-image {
         position: relative;
@@ -435,6 +436,10 @@ main {
           transition: 0.5s;
         }
       }
+    }
+
+    .mockup-box:hover {
+      scale: 1.05;
     }
   }
 }
